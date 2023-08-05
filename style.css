@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    max-width: 1440px;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    position:relative;
+    top: 100px;
+    left: 15%;
+}
+
+.activities {
+    position: relative;
+    bottom: 250px;
+    right: 5%;
+}
+
+.section1 {
+    position: relative;
+    bottom: 150px;
+    left: 23%;
+    margin-bottom: 20px;
+}
+
+.play_container {
+    position: relative;
+    bottom: 190px;
+    left: 18%;
+}
+
+.study_container {
+    position: relative;
+    bottom: 380px;
+    left: 36%;
+}
+
+.section2 {
+    position: relative;
+    bottom: 528px;
+    left: 23%;
+}
+
+.social_container {
+    position: relative;
+    bottom: 191px;
+    left: 18%;
+}
+
+.self_container {
+    position: relative;
+    bottom: 382px;
+    left: 36%;
+}
+
+/* .ellipsis img {
+    fill: red;
+} */
+
+.info_card {
+    width: 15%;
+    height: 400px;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.profile {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px 20px 40px 20px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+}
+
+/* li {
+    margin: 10px 0;
+    color: hsl(235, 45%, 61%);
+    font-size: 14px;
+} */
+
+#linkBtn {
+    position: relative;
+    top: 120px;
+}
+
+/* #linkBtn button:hover {
+    color: white;
+} */
+
+button {
+   border: none;
+   color: hsl(235, 45%, 61%);
+   background-color: white /*hsl(235, 46%, 20%)*/;
+   display: block;
+   font-size: 14px;
+   margin: 10px 0;
+}
+
+/* button:hover {
+    color: white;
+} */
+
+.activities .work_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.play_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.study_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.activities .exercise_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.social_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.self_card:hover {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.report {
+    position: relative;
+    top: 30px;
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.section1 .work_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.section1 .work_card, .play_card, .study_card {
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.work_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.work_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.work_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.work_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.section1 .play_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.play_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.play_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.play_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.play_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.section1 .study_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.study_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.study_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.study_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.study_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.section2 .exercise_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.section2 .exercise_card, .social_card, .self_card {
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.exercise_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.exercise_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.exercise_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.exercise_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.section2 .social_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.social_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.social_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.social_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.social_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+.section2 .self_container {
+    width: 200px;
+    height: 190px;
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50px 50px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.self_card .ellipsis {
+    position: relative;
+    left: 150px;
+    top: 15px;
+}
+
+.self_card h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.self_card .time {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+}
+
+.self_card .previous {
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: hsl(236, 100%, 87%);
+    margin-left: 10px;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        
+    }
+
+    .container {
+        background-color: hsl(226, 43%, 10%);
+        max-width: 350px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .info_card {
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .profile {
+        height: 200px;
+    }
+
+    button {
+        display: inline;
+        margin: 0 55px 0 10px;
+        letter-spacing: 1px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .month {
+        margin-right: 0px;
+    }
+
+    .report {
+        position: relative;
+        top: -9px;
+        left: 95px;
+    }
+
+    h2 {
+        position: relative;
+        top: 0px;
+        left: 95px;
+    }
+
+    .profile img {
+        position: relative;
+        top: 50px;
+        transform: scale(1.5);
+        background-color: white;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 0px 5px 0px 15px;
+    }
+
+    .section1 .work_container {
+        position: relative;
+        top: 400px;
+        right: 63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section1 .work_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .work_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .work_card h4 {
+        margin-left: 16px;
+    }
+
+    .work_card .time {
+        margin-left: 16px;
+    }
+
+    .work_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .section1 .play_container {
+        position: relative;
+        top: 400px;
+        left: -63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section1 .play_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .play_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .play_card h4 {
+        margin-left: 16px;
+    }
+
+    .play_card .time {
+        margin-left: 16px;
+    }
+
+    .play_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .section1 .study_container {
+        position: relative;
+        top: 400px;
+        left: -63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section1 .study_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .study_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .study_card h4 {
+        margin-left: 16px;
+    }
+
+    .study_card .time {
+        margin-left: 16px;
+    }
+
+    .study_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .section2 .exercise_container {
+        position: relative;
+        top: 770px;
+        right: 63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section2 .exercise_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .exercise_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .exercise_card h4 {
+        margin-left: 16px;
+    }
+
+    .exercise_card .time {
+        margin-left: 16px;
+    }
+
+    .exercise_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .section2 .social_container {
+        position: relative;
+        top: 770px;
+        left: -63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section2 .social_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .social_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .social_card h4 {
+        margin-left: 16px;
+    }
+
+    .social_card .time {
+        margin-left: 16px;
+    }
+
+    .social_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+    .section2 .self_container {
+        position: relative;
+        top: 770px;
+        left: -63px;
+        width: 100%;
+        height: 165px;
+        margin-top: 10px;
+    }
+
+    .section2 .self_card {
+        width: 102%;
+        height: 135px;
+        position: relative;
+        left: -1px;
+        top: 30px;
+    }
+
+    .self_card .ellipsis {
+        position: relative;
+        left: 300px;
+        top: 15px;
+    }
+
+    .self_card h4 {
+        margin-left: 16px;
+    }
+
+    .self_card .time {
+        margin-left: 16px;
+    }
+
+    .self_card .previous {
+        position: relative;
+        top: -12px;
+        left: 228px;
+    }
+
+}

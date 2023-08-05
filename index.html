@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info_card">
+      <div class="profile">
+        <img src="images/image-jeremy.png" alt="picture of Jeremy" height="50px" width="50px">
+        <div class="report">
+          <small class="small_txt">Report for</small>
+        </div>
+        <div class="name">
+          <h2>Jeremy <span class="surname">Robson</span></h2>
+        </div>
+        <div id="linkBtn">
+            <button id="daily">Daily</button>
+            <button id="weekly">Weekly</button>
+            <button class="month" id="monthly">Monthly</button>
+        </div>
+      </div>
+    </div>
+    <div class="activities">
+      <div class="section1">
+        <div class="work_container">
+          <div class="work_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Work</h4>
+            <div class="time">5hrs</div>
+            <div>
+              <span class="previous">Last Week - 7hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="play_container">
+          <div class="play_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Play</h4>
+            <div class="time">1hrs</div>
+            <div>
+              <span class="previous">Last Week - 2hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="study_container">
+          <div class="study_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Study</h4>
+            <div class="time">0hrs</div>
+            <div>
+              <span class="previous">Last Week - 1hrs</span>
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="section2">
+        <div class="exercise_container">
+          <div class="exercise_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Excercise</h4>
+            <div class="time">1hrs</div>
+            <div>
+              <span class="previous">Last Week - 1hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="social_container">
+          <div class="social_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Social</h4>
+            <div class="time">1hrs</div>
+            <div>
+              <span class="previous">Last Week - 3hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="self_container">
+          <div class="self_card">
+            <figure class="ellipsis">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </figure>
+            <h4 class="title">Self Care</h4>
+            <div class="time">0hrs</div>
+            <div>
+              <span class="previous">Last Week - 1hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
